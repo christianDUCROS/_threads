@@ -1,2 +1,2 @@
-# _threads
-Des exemples du cours  
+# _threads micropython
+Des exemples du cours  _thread micropyton Raspberry pi pico et ESP32
