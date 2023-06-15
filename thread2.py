@@ -3,7 +3,8 @@ import utime
 
 def core1_thread() : #capteur 	    
     print("J’utilise le coeur 1")
-    utime.sleep(10)
+    utime.sleep(2)
+    print("Fin du thread sur le coeur 1")
     
 #main    
 while True :
@@ -11,7 +12,6 @@ while True :
     print("J’utilise le coeur 0")
     try:
         _thread.start_new_thread(core1_thread, ())
-        break
     except OSError:
         pass
     utime.sleep(5)
